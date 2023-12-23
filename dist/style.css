@@ -1655,17 +1655,26 @@ html{
   z-index: 20;
 }
 
-.z-\[1\]{
-  z-index: 1;
-}
-
 .z-30{
   z-index: 30;
+}
+
+.z-40{
+  z-index: 40;
+}
+
+.mx-32{
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.-mt-10{
+  margin-top: -2.5rem;
 }
 
 .mr-5{
@@ -1676,8 +1685,40 @@ html{
   margin-top: 0.75rem;
 }
 
+.-mt-20{
+  margin-top: -5rem;
+}
+
+.-mt-12{
+  margin-top: -3rem;
+}
+
+.-mt-14{
+  margin-top: -3.5rem;
+}
+
+.-mt-16{
+  margin-top: -4rem;
+}
+
+.-mt-32{
+  margin-top: -8rem;
+}
+
+.-mt-3{
+  margin-top: -0.75rem;
+}
+
+.-mt-28{
+  margin-top: -7rem;
+}
+
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -1718,6 +1759,10 @@ html{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .items-center{
   align-items: center;
 }
@@ -1732,6 +1777,10 @@ html{
 
 .gap-4{
   gap: 1rem;
+}
+
+.justify-self-center{
+  justify-self: center;
 }
 
 .rounded-2xl{
@@ -1758,6 +1807,11 @@ html{
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(248 85 89 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -1789,14 +1843,9 @@ html{
   padding-bottom: 1.75rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pb-7{
@@ -1863,6 +1912,12 @@ html{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 /* Common CSS */
 
 * {
@@ -1879,9 +1934,18 @@ html{
 /* Common CSS */
 
 @media not all and (min-width: 1280px){
+  .max-xl\:-mt-14{
+    margin-top: -3.5rem;
+  }
+
   .max-xl\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .max-xl\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .max-xl\:text-base{
@@ -1905,6 +1969,10 @@ html{
 
   .max-md\:hidden{
     display: none;
+  }
+
+  .max-md\:h-\[190px\]{
+    height: 190px;
   }
 
   .max-md\:h-\[200px\]{
@@ -1932,6 +2000,10 @@ html{
     margin-bottom: 3.5rem;
   }
 
+  .md\:grid{
+    display: grid;
+  }
+
   .md\:px-7{
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -1953,6 +2025,10 @@ html{
     display: flex;
   }
 
+  .lg\:grid{
+    display: grid;
+  }
+
   .lg\:hidden{
     display: none;
   }
@@ -1964,6 +2040,19 @@ html{
 }
 
 @media (min-width: 1280px){
+  .xl\:-mt-28{
+    margin-top: -7rem;
+  }
+
+  .xl\:rounded-2xl{
+    border-radius: 1rem;
+  }
+
+  .xl\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
