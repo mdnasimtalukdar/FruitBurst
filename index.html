@@ -1,204 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8be5bad03d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./dist/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8be5bad03d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./dist/style.css" />
     <title>FruitBurst</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Start -->
     <header id="header" class="max-xl:px-5 relative">
-        <!-- Navbar -->
-        <div class="container mx-auto 2xl:px-10">
-            <div class="navbar bg-primary rounded-full md:my-14 max-md:py-2 py-7">
-                <!-- Nav Menu -->
-                <div class="navbar-start">
-                    <div class="dropdown">
-                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                      </div>
-                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3  p-2 shadow bg-base-100 rounded-box w-52 z-30">
-                          <li><a href="" class="text-base font-lato font-normal text-primary">Home</a></li>
-                          <li><a href="" class="text-base font-lato font-normal text-primary">About Us</a></li>
-                          <li><a href="" class="text-base font-lato font-normal text-primary">Shop</a></li>
-                          <li><a href="" class="text-base font-lato font-normal text-primary">All Fruits</a></li>
-                      </ul>
-                    </div>
-                    <!-- Menu -->
-                    <div class="hidden lg:flex">
-                      <ul class="menu menu-horizontal">
-                          <li><a href="" class="max-xl:text-base xl:text-xl font-lato font-normal text-white">Home</a></li>
-                          <li><a href="" class="max-xl:text-base xl:text-xl font-lato font-normal text-white">About Us</a></li>
-                          <li><a href="" class="max-xl:text-base xl:text-xl font-lato font-normal text-white">Shop</a></li>
-                          <li><a href="" class="max-xl:text-base xl:text-xl font-lato font-normal text-white">All Fruits</a></li>
-                        </ul>
-                    </div>
-                    <!-- Menu -->
-                  </div>
-                <!-- Nav Menu -->
-                <!-- Nav Logo -->
-                <div class="navbar-center hidden lg:flex">
-                    <a href="" class="flex items-center gap-4">
-                      <img src="./img/logo.png" alt="">
-                      <span class="font-lato text-4xl text-white font-bold">FruitBurst</span>
-                    </a>
-                  </div>
-                <!-- Nav Logo -->
-                <!-- Search Bar -->
-                <div class="navbar-end relative mr-5">
-                  <input type="search" placeholder="Search here" class="px-4 py-2 md:px-7 md:py-4 font-lato text-base rounded-full font-normal
-                  ">
-                  <i class="fa-brands fa-searchengin absolute right-[1.5rem] text-2xl text-primary"></i>
-                </div>
-                <!-- Search Bar -->
+      <!-- Navbar -->
+      <div class="container mx-auto 2xl:px-10">
+        <div class="navbar bg-primary rounded-full md:my-14 max-md:py-2 py-7">
+          <!-- Nav Menu -->
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-        </div>
-        <!-- Navbar -->
-        <!-- Banner Start -->
-        <div class="container mx-auto">
-          <div class="banner">
-            <div class="carousel w-full z-20">
-              <!-- Slide 1 -->
-              <div id="slide1" class="carousel-item items-center justify-center relative w-full  rounded-2xl">
-                <div class="relative">
-                  <div class="z-20 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <h1 class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-xl font-black font-lato text-primary">Exotic tastes at your <br>
-                       doorstep</h1>
-                    <p class="font-lato text-xl text-white font-normal max-md:hidden pt-5 pb-7">We supply highly quality organic products</p>
-                    <button class="font-lato text-xl font-black text-white bg-primary max-md:py-2 max-md:px-3 max-md:text-[14px] py-5 px-7 rounded-2xl max-md:mt-3">Shop Now</button>
-                  </div>
-                  <img src="./img/banner1.png" alt="" class="max-md:h-[190px]">
-                  <div class="absolute bg-[#00000083] w-full h-full top-0 left-0 rounded-2xl z-10"></div>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 max-md:left-3 max-md:right-3  left-16 right-16 top-1/2 z-20">
-                  <a href="#slide4" class="btn btn-circle">❮</a> 
-                  <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <!-- Slide 1 -->
-              <!-- Slide 2 -->
-              <div id="slide2" class="carousel-item items-center justify-center rounded-full relative w-full">
-                <div class="relative">
-                  <div class="z-20 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <h1 class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-xl font-black font-lato text-primary">Exotic tastes at your <br>
-                       doorstep</h1>
-                    <p class="font-lato text-xl text-white font-normal pt-5 pb-7 max-md:hidden">We supply highly quality organic products</p>
-                    <button class="font-lato text-xl font-black text-white bg-primary py-5 px-7 rounded-2xl max-md:py-2 max-md:px-3 max-md:text-[14px] max-md:mt-3">Shop Now</button>
-                  </div>
-                  <img src="./img/banner2.png" alt="" class="max-md:h-[190px]">
-                  <div class="absolute bg-[#00000083] w-full h-full top-0 left-0 rounded-2xl z-10"></div>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-16 right-16 z-20 top-1/2 max-md:left-3 max-md:right-3">
-                  <a href="#slide1" class="btn btn-circle">❮</a> 
-                  <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <!-- Slide 2 -->
-              <!-- Slide 3 -->
-              <div id="slide3" class="carousel-item items-center justify-center relative w-full">
-                <div class="relative">
-                  <div class="z-20 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <h1 class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-xl font-black font-lato text-primary">Exotic tastes at your <br>
-                       doorstep</h1>
-                    <p class="font-lato text-xl text-white font-normal pt-5 pb-7 max-md:hidden">We supply highly quality organic products</p>
-                    <button class="font-lato text-xl font-black text-white bg-primary py-5 px-7 rounded-2xl max-md:py-2 max-md:px-3 max-md:text-[14px] max-md:mt-3">Shop Now</button>
-                  </div>
-                  <img src="./img/banner3.png" alt="" class="max-md:h-[190px]">
-                  <div class="absolute bg-[#00000083] w-full h-full top-0 left-0 rounded-2xl z-10"></div>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-16 right-16 z-20 top-1/2 max-md:left-3 max-md:right-3">
-                  <a href="#slide2" class="btn btn-circle">❮</a> 
-                  <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <!-- Slide 3 -->
-              <!-- Slide 4 -->
-              <div id="slide4" class="carousel-item items-center justify-center rounded-full relative max-md:h-[200px] w-full">
-                <div class="relative">
-                  <div class="z-20 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <h1 class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-xl font-black font-lato text-primary">Exotic tastes at your <br>
-                       doorstep</h1>
-                    <p class="font-lato text-xl text-white font-normal pt-5 pb-7 max-md:hidden">We supply highly quality organic products</p>
-                    <button class="font-lato text-xl font-black text-white bg-primary py-5 px-7 rounded-2xl max-md:py-2 max-md:px-3 max-md:text-[14px] max-md:mt-3">Shop Now</button>
-                  </div>
-                  <img src="./img/banner4.png" alt="" class="max-md:h-[190px]">
-                  <div class="absolute bg-[#00000083] w-full h-full top-0 left-0 rounded-2xl z-10"></div>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-16 right-16 z-20 top-1/2 max-md:left-3 max-md:right-3">
-                  <a href="#slide3" class="btn btn-circle">❮</a> 
-                  <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-              </div>
-              <!-- Slide 4 -->
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-30"
+              >
+                <li>
+                  <a
+                    href=""
+                    class="text-base font-lato font-normal text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="text-base font-lato font-normal text-primary"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="text-base font-lato font-normal text-primary"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="text-base font-lato font-normal text-primary"
+                    >All Fruits</a
+                  >
+                </li>
+              </ul>
             </div>
+            <!-- Menu -->
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal">
+                <li>
+                  <a
+                    href=""
+                    class="max-xl:text-base xl:text-xl font-lato font-normal text-white"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="max-xl:text-base xl:text-xl font-lato font-normal text-white"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="max-xl:text-base xl:text-xl font-lato font-normal text-white"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="max-xl:text-base xl:text-xl font-lato font-normal text-white"
+                    >All Fruits</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Menu -->
+          </div>
+          <!-- Nav Menu -->
+          <!-- Nav Logo -->
+          <div class="navbar-center hidden lg:flex">
+            <a href="" class="flex items-center gap-4">
+              <img src="./img/logo.png" alt="" />
+              <span class="font-lato text-4xl text-white font-bold"
+                >FruitBurst</span
+              >
+            </a>
+          </div>
+          <!-- Nav Logo -->
+          <!-- Search Bar -->
+          <div class="navbar-end relative mr-5">
+            <input
+              type="search"
+              placeholder="Search here"
+              class="px-4 py-2 md:px-7 md:py-4 font-lato text-base rounded-full font-normal"
+            />
+            <i
+              class="fa-brands fa-searchengin absolute right-[1.5rem] text-2xl text-primary"
+            ></i>
+          </div>
+          <!-- Search Bar -->
+        </div>
+      </div>
+      <!-- Navbar -->
+      <!-- Banner Start -->
+      <div class="container mx-auto">
+        <div class="banner">
+          <div class="carousel w-full z-20">
+            <!-- Slide 1 -->
+            <div
+              id="slide1"
+              class="carousel-item items-center justify-center relative w-full rounded-2xl"
+            >
+              <div class="relative">
+                <div
+                  class="z-20 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                >
+                  <h1
+                    class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-xl font-black font-lato text-primary"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p
+                    class="font-lato text-xl text-white font-normal max-md:hidden pt-5 pb-7"
+                  >
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="font-lato text-xl font-black text-white bg-primary max-md:py-2 max-md:px-3 max-md:text-[14px] py-5 px-7 rounded-2xl max-md:mt-3"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+                <img src="./img/banner1.png" alt="" class="max-md:h-[190px]" />
+                <div
+                  class="absolute bg-[#00000083] w-full h-full top-0 left-0 rounded-2xl z-10"
+                ></div>
+              </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 max-md:left-3 max-md:right-3 left-16 right-16 top-1/2 z-20"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- Slide 1 -->
+            <!-- Slide 2 -->
+            <div
+              id="slide2"
+              class="carousel-item items-center justify-center rounded-full relative w-full"
+            >
+              <div class="relative">
+                <div
+                  class="z-20 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                >
+                  <h1
+                    class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-xl font-black font-lato text-primary"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p
+                    class="font-lato text-xl text-white font-normal pt-5 pb-7 max-md:hidden"
+                  >
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="font-lato text-xl font-black text-white bg-primary py-5 px-7 rounded-2xl max-md:py-2 max-md:px-3 max-md:text-[14px] max-md:mt-3"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+                <img src="./img/banner2.png" alt="" class="max-md:h-[190px]" />
+                <div
+                  class="absolute bg-[#00000083] w-full h-full top-0 left-0 rounded-2xl z-10"
+                ></div>
+              </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-16 right-16 z-20 top-1/2 max-md:left-3 max-md:right-3"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <!-- Slide 3 -->
+            <div
+              id="slide3"
+              class="carousel-item items-center justify-center relative w-full"
+            >
+              <div class="relative">
+                <div
+                  class="z-20 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                >
+                  <h1
+                    class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-xl font-black font-lato text-primary"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p
+                    class="font-lato text-xl text-white font-normal pt-5 pb-7 max-md:hidden"
+                  >
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="font-lato text-xl font-black text-white bg-primary py-5 px-7 rounded-2xl max-md:py-2 max-md:px-3 max-md:text-[14px] max-md:mt-3"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+                <img src="./img/banner3.png" alt="" class="max-md:h-[190px]" />
+                <div
+                  class="absolute bg-[#00000083] w-full h-full top-0 left-0 rounded-2xl z-10"
+                ></div>
+              </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-16 right-16 z-20 top-1/2 max-md:left-3 max-md:right-3"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <!-- Slide 4 -->
+            <div
+              id="slide4"
+              class="carousel-item items-center justify-center rounded-full relative max-md:h-[200px] w-full"
+            >
+              <div class="relative">
+                <div
+                  class="z-20 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                >
+                  <h1
+                    class="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-xl font-black font-lato text-primary"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p
+                    class="font-lato text-xl text-white font-normal pt-5 pb-7 max-md:hidden"
+                  >
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="font-lato text-xl font-black text-white bg-primary py-5 px-7 rounded-2xl max-md:py-2 max-md:px-3 max-md:text-[14px] max-md:mt-3"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+                <img src="./img/banner4.png" alt="" class="max-md:h-[190px]" />
+                <div
+                  class="absolute bg-[#00000083] w-full h-full top-0 left-0 rounded-2xl z-10"
+                ></div>
+              </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-16 right-16 z-20 top-1/2 max-md:left-3 max-md:right-3"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- Slide 4 -->
           </div>
         </div>
-        <!-- Banner End -->
+      </div>
+      <!-- Banner End -->
     </header>
     <!-- Header End -->
     <!-- Main Start -->
-      <main>
-        <div class="container mx-auto">
-          <!-- Banner Fruit -->
-              <div class="lg:grid grid-cols-5 items-center relative bg-white shadow-2xl hidden mx-32 xl:py-12 max-xl:py-6  rounded-2xl z-40 xl:-mt-28 max-xl:-mt-14">
-                  <div class="flex flex-col items-center justify-center">
-                    <img src="./img/fruit1.png" alt="" class="justify-self-center mb-2">
-                    <p class="text-xl font-lato font-bold text-gray">Grapes</p>
-                  </div>
-                  <div class="flex flex-col items-center justify-center">
-                    <img src="./img/fruit2.png" alt="" class="justify-self-center mb-2">
-                    <p class="text-xl font-lato font-bold text-gray">Orange</p>
-                  </div>
-                  <div class="flex flex-col items-center justify-center">
-                    <img src="./img/fruit3.png" alt="" class="justify-self-center mb-2">
-                    <p class="text-xl font-lato font-bold text-gray">Mango</p>
-                  </div>
-                  <div class="flex flex-col items-center justify-center">
-                    <img src="./img/fruit4.png" alt="" class="justify-self-center mb-2">
-                    <p class="text-xl font-lato font-bold text-gray">Strawberry</p>
-                  </div>
-                  <div class="flex flex-col items-center justify-center">
-                    <img src="./img/fruit5.png" alt="" class="justify-self-center mb-2">
-                    <p class="text-xl font-lato font-bold text-gray">Pomegranate </p>
-                  </div>
-              </div>
-      <!-- Banner Fruit -->
-        </div>
-        <!-- Deal Of The Day -->
-        <section class="py-24 max-xl:px-5">
-          <div class="container mx-auto">
-            <div class="flex items-center lg:flex-row flex-col justify-between gap-10">
-              <div class="space-y-6 md:w-[600px]">
-                <h2 class="text-5xl font-lato font-black">Deal of the day</h2>
-                <p class="font-lato text-base font-normal leading-7 text-gray">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-              </div>
-              <!-- Timer -->
-              <div class="flex items-center text-center gap-10 md:gap-20">
-                <div>
-                  <h2 class="text-5xl font-lato font-black text-primary">29</h2>
-                  <p class="font-lato text-base font-normal leading-7 text-gray">Days</p>
-                </div>
-                <div>
-                  <h2 class="text-5xl font-lato font-black text-primary">15</h2>
-                  <p class="font-lato text-base font-normal leading-7 text-gray">Hours</p>
-                </div>
-                <div>
-                  <h2 class="text-5xl font-lato font-black text-primary">25</h2>
-                  <p class="font-lato text-base font-normal leading-7 text-gray">Minutes</p>
-                </div>
-                <div>
-                  <h2 class="text-5xl font-lato font-black text-primary">08</h2>
-                  <p class="font-lato text-base font-normal leading-7 text-gray">Seconds</p>
-                </div>
-              </div>
-              <!-- Timer -->
-            </div>
+    <main>
+      <div class="container mx-auto">
+        <!-- Banner Fruit -->
+        <div
+          class="lg:grid grid-cols-5 items-center relative bg-white shadow-2xl hidden mx-32 xl:py-12 max-xl:py-6 rounded-2xl z-40 xl:-mt-28 max-xl:-mt-14"
+        >
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="./img/fruit1.png"
+              alt=""
+              class="justify-self-center mb-2"
+            />
+            <p class="text-xl font-lato font-bold text-gray">Grapes</p>
           </div>
-        </section>
-        <!-- Deal Of The Day -->
-      </main>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="./img/fruit2.png"
+              alt=""
+              class="justify-self-center mb-2"
+            />
+            <p class="text-xl font-lato font-bold text-gray">Orange</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="./img/fruit3.png"
+              alt=""
+              class="justify-self-center mb-2"
+            />
+            <p class="text-xl font-lato font-bold text-gray">Mango</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="./img/fruit4.png"
+              alt=""
+              class="justify-self-center mb-2"
+            />
+            <p class="text-xl font-lato font-bold text-gray">Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="./img/fruit5.png"
+              alt=""
+              class="justify-self-center mb-2"
+            />
+            <p class="text-xl font-lato font-bold text-gray">Pomegranate</p>
+          </div>
+        </div>
+        <!-- Banner Fruit -->
+      </div>
+      <!-- Deal Of The Day -->
+      <section class="py-24 max-xl:px-5">
+        <div class="container mx-auto">
+          <div
+            class="flex items-center lg:flex-row flex-col justify-between gap-10"
+          >
+            <div class="space-y-6 md:w-[600px]">
+              <h2 class="text-5xl font-lato font-black">Deal of the day</h2>
+              <p class="font-lato text-base font-normal leading-7 text-gray">
+                Contrary to popular belief, is not simply random text. It has
+                roots in a piece of classical Latin literature from 45 BC,
+                making it over 2000 years old.
+              </p>
+            </div>
+            <!-- Timer -->
+            <div class="flex items-center text-center gap-10 md:gap-20">
+              <div>
+                <h2 class="text-5xl font-lato font-black text-primary">29</h2>
+                <p class="font-lato text-base font-normal leading-7 text-gray">
+                  Days
+                </p>
+              </div>
+              <div>
+                <h2 class="text-5xl font-lato font-black text-primary">15</h2>
+                <p class="font-lato text-base font-normal leading-7 text-gray">
+                  Hours
+                </p>
+              </div>
+              <div>
+                <h2 class="text-5xl font-lato font-black text-primary">25</h2>
+                <p class="font-lato text-base font-normal leading-7 text-gray">
+                  Minutes
+                </p>
+              </div>
+              <div>
+                <h2 class="text-5xl font-lato font-black text-primary">08</h2>
+                <p class="font-lato text-base font-normal leading-7 text-gray">
+                  Seconds
+                </p>
+              </div>
+            </div>
+            <!-- Timer -->
+          </div>
+          <!-- Deal Of the day body -->
+          <div class="grid md:grid-cols-2  lg:grid-cols-4 gap-6 mt-12">
+            <!-- Deal OF The Day Card 1 -->
+            <div class=" border border-solid border-gray flex items-center flex-col py-12 rounded-2xl">
+              <img src="./img/fruit6.png" alt="" />
+              <h3 class="text-2xl font-black font-lato py-7">12.90$ - 18.85$</h3>
+              <hr>
+              <p class="font-lato text-base text-gray font-normal mb-4">Apples</p>
+              <ul class="flex gap-2 mb-3">
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke text-2xl text-primary"></i></li>
+              </ul>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="" onclick="my_modal_1.showModal()">
+                <span class="font-lato text-lg font-black text-primary">Details</span>
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box flex items-center flex-col text-center">
+                  <img src="./img/fruit6.png" alt="">
+                  <h3 class="font-lato text-4xl font-black py-6">Apples</h3>
+                  <p class="font-lato text-base font-normal leading-7 text-gray mb-8">
+                    Professional employees are there for you to pick the most amazing and fresh fruits.
+                  </p>
+                  <ul class="flex gap-2 mb-10">
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star-half-stroke text-2xl text-primary"></i></li>
+                  </ul>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="font-lato text-xl font-black px-7 py-5 text-primary border border-solid border-primary hover:text-white hover:bg-primary duration-300 ease-in rounded-2xl mr-8">Close</button>
+                      <button class="font-lato text-xl font-black px-7 py-5 text-white bg-primary border border-solid border-primary hover:text-primary hover:bg-transparent duration-300 ease-in rounded-2xl">Buy Now</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <!-- Deal OF The Day Card 1 -->
+            <!-- Deal OF The Day Card 2 -->
+            <div class=" border border-solid border-gray flex items-center flex-col py-12 rounded-2xl">
+              <img src="./img/fruit7.png" alt="" />
+              <h3 class="text-2xl font-black font-lato py-7">12.90$ - 18.85$</h3>
+              <hr>
+              <p class="font-lato text-base text-gray font-normal mb-4">Orange</p>
+              <ul class="flex gap-2 mb-3">
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke text-2xl text-primary"></i></li>
+              </ul>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="" onclick="my_modal_2.showModal()">
+                <span class="font-lato text-lg font-black text-primary">Details</span>
+              </button>
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box flex items-center flex-col text-center">
+                  <img src="./img/fruit7.png" alt="">
+                  <h3 class="font-lato text-4xl font-black py-6">Orange</h3>
+                  <p class="font-lato text-base font-normal leading-7 text-gray mb-8">
+                    Professional employees are there for you to pick the most amazing and fresh fruits.
+                  </p>
+                  <ul class="flex gap-2 mb-10">
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star-half-stroke text-2xl text-primary"></i></li>
+                  </ul>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="font-lato text-xl font-black px-7 py-5 text-primary border border-solid border-primary hover:text-white hover:bg-primary duration-300 ease-in rounded-2xl mr-8">Close</button>
+                      <button class="font-lato text-xl font-black px-7 py-5 text-white bg-primary border border-solid border-primary hover:text-primary hover:bg-transparent duration-300 ease-in rounded-2xl">Buy Now</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <!-- Deal OF The Day Card 2 -->
+            <!-- Deal OF The Day Card 3 -->
+            <div class=" border border-solid border-gray flex items-center flex-col py-12 rounded-2xl">
+              <img src="./img/fruit8.png" alt="" />
+              <h3 class="text-2xl font-black font-lato py-7">12.90$ - 18.85$</h3>
+              <hr>
+              <p class="font-lato text-base text-gray font-normal mb-4">Red Dragon</p>
+              <ul class="flex gap-2 mb-3">
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke text-2xl text-primary"></i></li>
+              </ul>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="" onclick="my_modal_3.showModal()">
+                <span class="font-lato text-lg font-black text-primary">Details</span>
+              </button>
+              <dialog id="my_modal_3" class="modal">
+                <div class="modal-box flex items-center flex-col text-center">
+                  <img src="./img/fruit8.png" alt="">
+                  <h3 class="font-lato text-4xl font-black py-6">Red Dragon</h3>
+                  <p class="font-lato text-base font-normal leading-7 text-gray mb-8">
+                    Professional employees are there for you to pick the most amazing and fresh fruits.
+                  </p>
+                  <ul class="flex gap-2 mb-10">
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star-half-stroke text-2xl text-primary"></i></li>
+                  </ul>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="font-lato text-xl font-black px-7 py-5 text-primary border border-solid border-primary hover:text-white hover:bg-primary duration-300 ease-in rounded-2xl mr-8">Close</button>
+                      <button class="font-lato text-xl font-black px-7 py-5 text-white bg-primary border border-solid border-primary hover:text-primary hover:bg-transparent duration-300 ease-in rounded-2xl">Buy Now</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <!-- Deal OF The Day Card 3 -->
+            <!-- Deal OF The Day Card 4 -->
+            <div class=" border border-solid border-gray flex items-center flex-col py-12 rounded-2xl">
+              <img src="./img/fruit9.png" alt="" />
+              <h3 class="text-2xl font-black font-lato py-7">12.90$ - 18.85$</h3>
+              <hr>
+              <p class="font-lato text-base text-gray font-normal mb-4">Banana</p>
+              <ul class="flex gap-2 mb-3">
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke text-2xl text-primary"></i></li>
+              </ul>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="" onclick="my_modal_4.showModal()">
+                <span class="font-lato text-lg font-black text-primary">Details</span>
+              </button>
+              <dialog id="my_modal_4" class="modal">
+                <div class="modal-box flex items-center flex-col text-center">
+                  <img src="./img/fruit9.png" alt="">
+                  <h3 class="font-lato text-4xl font-black py-6">Banana</h3>
+                  <p class="font-lato text-base font-normal leading-7 text-gray mb-8">
+                    Professional employees are there for you to pick the most amazing and fresh fruits.
+                  </p>
+                  <ul class="flex gap-2 mb-10">
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star text-2xl text-primary"></i></li>
+                    <li><i class="fa-solid fa-star-half-stroke text-2xl text-primary"></i></li>
+                  </ul>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="font-lato text-xl font-black px-7 py-5 text-primary border border-solid border-primary hover:text-white hover:bg-primary duration-300 ease-in rounded-2xl mr-8">Close</button>
+                      <button class="font-lato text-xl font-black px-7 py-5 text-white bg-primary border border-solid border-primary hover:text-primary hover:bg-transparent duration-300 ease-in rounded-2xl">Buy Now</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <!-- Deal OF The Day Card 4 -->
+          </div>
+          <!-- Deal Of the day body -->
+          <button class="flex mx-auto font-lato text-xl font-black bg-primary py-5 px-7 rounded-2xl text-white mt-12">Shop All</button>
+        </div>
+      </section>
+      <!-- Deal Of The Day -->
+    </main>
     <!-- Main End -->
-</body>
+  </body>
 </html>
