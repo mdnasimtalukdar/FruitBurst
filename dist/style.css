@@ -1827,6 +1827,10 @@ html{
   margin-bottom: 2rem;
 }
 
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
 .mr-5{
   margin-right: 1.25rem;
 }
@@ -1839,16 +1843,12 @@ html{
   margin-top: 3rem;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-20{
   margin-top: 5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .flex{
@@ -1897,12 +1897,12 @@ html{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1919,6 +1919,10 @@ html{
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-items-center{
+  justify-items: center;
 }
 
 .gap-10{
@@ -1941,14 +1945,24 @@ html{
   gap: 1.5rem;
 }
 
-.gap-5{
-  gap: 1.25rem;
+.gap-14{
+  gap: 3.5rem;
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.self-center{
+  align-self: center;
 }
 
 .justify-self-center{
@@ -1998,6 +2012,11 @@ html{
   background-color: rgb(0 0 0 / 0.6);
 }
 
+.bg-gray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 168 168 / var(--tw-bg-opacity));
+}
+
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(248 85 89 / var(--tw-bg-opacity));
@@ -2024,14 +2043,18 @@ html{
   padding: 0.5rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .px-7{
@@ -2054,11 +2077,6 @@ html{
   padding-bottom: 6rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-32{
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -2079,35 +2097,20 @@ html{
   padding-bottom: 1.75rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .pb-7{
   padding-bottom: 1.75rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
-}
-
-.pb-3{
-  padding-bottom: 0.75rem;
-}
-
 .pt-2{
   padding-top: 0.5rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .pt-8{
@@ -2116,6 +2119,10 @@ html{
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .font-lato{
@@ -2164,8 +2171,17 @@ html{
   font-weight: 400;
 }
 
+.leading-6{
+  line-height: 1.5rem;
+}
+
 .leading-7{
   line-height: 1.75rem;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray{
@@ -2221,6 +2237,52 @@ html{
 }
 
 /* Common CSS */
+
+.after\:absolute::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:-bottom-4::after{
+  content: var(--tw-content);
+  bottom: -1rem;
+}
+
+.after\:left-0::after{
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.after\:right-0::after{
+  content: var(--tw-content);
+  right: 0px;
+}
+
+.after\:inline-block::after{
+  content: var(--tw-content);
+  display: inline-block;
+}
+
+.after\:h-1::after{
+  content: var(--tw-content);
+  height: 0.25rem;
+}
+
+.after\:w-32::after{
+  content: var(--tw-content);
+  width: 8rem;
+}
+
+.after\:bg-primary::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 85 89 / var(--tw-bg-opacity));
+}
+
+.after\:content-\[\'\'\]::after{
+  --tw-content: '';
+  content: var(--tw-content);
+}
 
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
@@ -2360,6 +2422,10 @@ html{
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
