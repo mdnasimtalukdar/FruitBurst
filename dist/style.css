@@ -1049,6 +1049,34 @@ html{
   display: none;
 }
 
+.footer{
+  display: grid;
+  width: 100%;
+  grid-auto-flow: row;
+  place-items: start;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.footer > *{
+  display: grid;
+  place-items: start;
+  gap: 0.5rem;
+}
+
+@media (min-width: 48rem){
+  .footer{
+    grid-auto-flow: column;
+  }
+
+  .footer-center{
+    grid-auto-flow: row dense;
+  }
+}
+
 .input{
   flex-shrink: 1;
   -webkit-appearance: none;
@@ -1897,10 +1925,6 @@ html{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-5{
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -1921,12 +1945,16 @@ html{
   justify-content: space-between;
 }
 
-.justify-items-center{
-  justify-items: center;
-}
-
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-14{
+  gap: 3.5rem;
+}
+
+.gap-16{
+  gap: 4rem;
 }
 
 .gap-2{
@@ -1941,12 +1969,12 @@ html{
   gap: 1rem;
 }
 
-.gap-6{
-  gap: 1.5rem;
+.gap-5{
+  gap: 1.25rem;
 }
 
-.gap-14{
-  gap: 3.5rem;
+.gap-6{
+  gap: 1.5rem;
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]){
@@ -1959,10 +1987,6 @@ html{
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.self-center{
-  align-self: center;
 }
 
 .justify-self-center{
@@ -2006,6 +2030,11 @@ html{
 .bg-base-100{
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-black\/60{
@@ -2365,6 +2394,10 @@ html{
 }
 
 @media (min-width: 768px){
+  .md\:visible{
+    visibility: visible;
+  }
+
   .md\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -2373,6 +2406,10 @@ html{
   .md\:my-14{
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:w-\[550px\]{
@@ -2385,6 +2422,10 @@ html{
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-14{
+    gap: 3.5rem;
   }
 
   .md\:gap-20{
@@ -2420,12 +2461,12 @@ html{
     display: none;
   }
 
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
